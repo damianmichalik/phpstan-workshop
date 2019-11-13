@@ -1,0 +1,17 @@
+{
+  "name": "damian-michalik/phpstan-workshop",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "test"
+    }
+  },
+  "require": {},
+  "require-dev": {
+      "phpstan/phpstan": "^0.11.19"
+  }
+}

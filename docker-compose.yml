@@ -4,6 +4,9 @@ services:
   php-cli:
     build:
       context: ./docker/php-cli
+      args:
+        USER_ID: ${USER_ID:-0}
+        GROUP_ID: ${GROUP_ID:-0}
     tty: true
     volumes:
-    - .:/var/www
+      - .:/var/www
